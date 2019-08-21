@@ -249,9 +249,13 @@ header .second-row
 	width: 100%;
 }
 
+h2 {
+    font-size: 1.12em;
+}
+
 .article-title {
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: 1.12em;
 	font-weight: bold;
 	color: black;
 }
