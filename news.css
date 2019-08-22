@@ -1,7 +1,3 @@
-header {
-	margin-bottom: 10px;
-}
-
 .article {
 	border-bottom: none;
 }
@@ -25,6 +21,10 @@ header {
 
 .news-article-title {
 	font-size: 2.1em;
+}
+
+.additional-space-in-title {
+	margin-bottom: 1.5em;
 }
 
 /**************************************************

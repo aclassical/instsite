@@ -23,15 +23,15 @@ body
 }
 
 .container::after,
-header .first-row::after,
-header .second-row::after
+.header .first-row::after,
+.header .second-row::after
 {
     display: table;
     clear: both;
     content: '';
 }
 
-header
+.header
 {
     padding-top: 25px;
 
@@ -43,7 +43,7 @@ header
     background-size: 100%;
 }
 
-header .first-row
+.header .first-row
 {
     display: flex;
     flex-direction: row-reverse;
@@ -58,14 +58,14 @@ header .first-row
     justify-content: space-around;
 }
 
-header .second-row
+.header .second-row
 {
     position: relative;
 
     margin-top: 45px;
 }
 
-.logo-box
+.header .logo-box
 {
     position: relative;
     top: 25px;
@@ -77,14 +77,14 @@ header .second-row
     margin-left: 20px;
 }
 
-.logo-image
+.header .logo-image
 {
     position: absolute;
     top: -12px;
     left: 5px;
 }
 
-.logo-text
+.header .logo-text
 {
     font-size: 48px;
     font-weight: bold;
@@ -95,7 +95,7 @@ header .second-row
     color: green;
 }
 
-.caption-header
+.header .caption-header
 {
     font-size: 20px;
 
@@ -106,27 +106,27 @@ header .second-row
     text-align: center;
 }
 
-.caption-header p:last-child
+.header .caption-header p:last-child
 {
     font-size: 45px;
     font-weight: bold;
 }
 
-.main-menu
+.header .main-menu
 {
     border-radius: 15px;
     background: rgba(0,0,0,.6);
     box-shadow: 3px 0 7px rgba(0,0,0,.3);
 }
 
-.main-menu:after
+.header .main-menu:after
 {
     display: table;
     clear: both;
     content: '';
 }
 
-.languages
+.header .languages
 {
     position: absolute;
     top: 11px;
@@ -196,19 +196,19 @@ header .second-row
 	text-decoration: underline;
 }
 
-.sub-menu {
+.header .sub-menu {
 	position: absolute;
 	display: none;
 	z-index: 5;
 }
 
-.menu .submenu-holder:hover .sub-menu
+.header .menu .submenu-holder:hover .sub-menu
 {
     display: block;
     background: rgba(0,0,0, 0.9);
 }
 
-/*////////////////////////////////////////////*/
+/*//////////////// Main ////////////////////*/
 
 .main-page-title
 {
@@ -253,14 +253,16 @@ h2 {
     font-size: 1.12em;
 }
 
-.article-title {
+.article-title,
+.news-next a {
 	text-decoration: none;
 	font-size: 1.12em;
 	font-weight: bold;
 	color: black;
 }
 
-.article-title:hover {
+.article-title:hover,
+.news-next a:hover {
 	text-decoration: underline;
 }
 
@@ -278,7 +280,16 @@ h2 {
 	opacity: 0.3;
 }
 
-/*////////////////////////////////////////////*/
+.news-next {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.news-next a {
+    font-size: 0.9em;
+}
+
+/*//////////////////// Aside ////////////////////////*/
 
 .aside {
 	float: right;
@@ -347,3 +358,40 @@ button {
 	width: 100%;
 }
 
+/*///////////////////// Footer ////////////////////////////*/
+
+.footer {
+    background: rgba(0,0,0,.6);
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-menu .footer-menu-group {
+    list-style: none;
+}
+
+.footer-menu a {
+    display: inline-block;
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+}
